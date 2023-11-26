@@ -723,3 +723,39 @@ footer {
     display: flex;
     margin: 20px 0;
 }
+
+.container {
+    padding: 0 10px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* Media */
+
+@media (min-width: 428px) {
+    .container {
+        width: 428px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+    .core-values-item {
+        flex-basis: calc(100% / 2 - 30px);
+    }
+
+}
+
+@media (min-width: 1158px) {
+    .container {
+        width: 1158px;
+    }
+
+    .core-values-item {
+        flex-basis: calc(100% / 4 - 30px);
+    }
+
+}
